@@ -115,10 +115,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `The Boring Blog`,
-        short_name: `BB`,
+        short_name: `bBlog`,
         start_url: `/`,
-        background_color: `#002c73`,
-        theme_color: `#ffd009`,
+        background_color: `#ffd009`,
+        theme_color: `#002c73`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/default.png`,
