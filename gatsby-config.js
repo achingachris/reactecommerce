@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `The Boring Blog`,
+    author: `Chris Achinga`,
+    description: `All articles in technical departments and how to do some stuffs using a computer thing`,
+    siteUrl: `https://theboringblog.netlify.app/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `@achinga_chris`,
     },
   },
   plugins: [
@@ -114,14 +114,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `The Boring Blog`,
+        short_name: `BB`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#002c73`,
+        theme_color: `#ffd009`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/default.png`,
       },
     },
     {
