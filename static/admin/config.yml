@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: ChrisAchinga/blog
 
 media_folder: content/assets
 public_folder: ../assets
@@ -16,3 +16,4 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+
