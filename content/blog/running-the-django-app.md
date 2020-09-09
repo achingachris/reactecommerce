@@ -6,7 +6,7 @@ description: Configuring files in your Django app to start working on your
   Django Project on the go
 ---
 
-    Check this out, on a previous article, I created the skeleton of a Django project and a Django app. Now we making it work.
+> - Check this out, on a previous article, I created the skeleton of a Django project and a Django app. Now we making it work.
 
 
 If you'll be coding along, I used the following set up environment:
