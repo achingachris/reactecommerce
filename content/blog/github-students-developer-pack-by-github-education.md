@@ -8,8 +8,7 @@ description: Well if you are a developer you probably must have heard of GitHub.
   Education helps students, teachers, and schools access the tools and events
   they need to shape the next generation of software development.
 ---
-
-![github student developer pack](../assets/student-pack.jpg "Github Student Developer Pack")
+![github student developer pack](../assets/education-github.png "Github Student Developer Pack")
 
 > Well if you are a developer you probably must have heard of GitHub. Ok, that's obvious. If you are a developer who is a student like in a Learning Institution you may or may not have heard of GitHub Students Pack.
 >
