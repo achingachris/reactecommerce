@@ -69,7 +69,7 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Made with a laptop
           {` `}
-          <a href="https://achinga.netlify.app/">Chris Achinga</a>
+          <a href="https://chrisachinga.github.io/chris.dev/">Chris Achinga</a>
         </Footer>
       </Wrapper>
     )

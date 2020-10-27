@@ -17,14 +17,15 @@ class IndexPage extends React.Component {
         />
         {/* <img style={{ margin: 0 }} src="./default.png" alt="Gatsby Scene" /> */}
         <h1>
-          Hey people{" "}
-          <span role="img" aria-label="wave emoji">
-            👋
-          </span>
+          Technical and Technological Articles
         </h1>
-        <p>Welcome to my Blogging site. Do not expect so much fun stuff, because it's too technical</p>
+        <p>welcome to my official blogging site</p>
+        {/* <hr></hr> */}
+        <h1>
+          About Chris
+        </h1>
         <p>
-          As much as I am also a front end developer, this site may or may not look that classy, but it works!!. Will probably make it cool overtime, but I constantly update my stuffs.
+          I create solutions using clean code
         </p>
         <p>Now go read some stuffs</p>
         <Link to="/blog/">

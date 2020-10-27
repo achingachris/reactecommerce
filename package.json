@@ -2,8 +2,8 @@
   "name": "the-boring-blog",
   "private": false,
   "description": "All articles in technical departments and how to do some stuffs using a computer thing",
-  "version": "0.0.0",
-  "author": "Chris Achiga",
+  "version": "1.0.0",
+  "author": "Chris Achinga",
   "bugs": {
     "url": "https://github.com/ChrisAchinga/blog/issues"
   },
@@ -54,7 +54,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "GNU",
   "main": "n/a",
   "repository": {
     "type": "git",
