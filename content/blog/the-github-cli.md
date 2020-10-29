@@ -4,7 +4,7 @@ date: 2020-10-29T19:09:40.168Z
 title: The GitHub CLI
 description: What is the GitHub CLI
 ---
-# Pilot
+# Pilot ✈️
 
 ![](../assets/ghclilandingweb.png)
 
