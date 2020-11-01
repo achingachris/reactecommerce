@@ -14,7 +14,7 @@ An alternative to using GitHub CLI is [HUB](https://hub.github.com/), which was 
 
 GitHub CLI is an open-source project, here on [GitHub](https://github.com/cli/cli/).
 
-I had an article before on using GitHub CLI and its commands, so this is kind of like an update because the cli is up on version 1.x.x right now, better to stay on the know/updated. To get the latest releases of the cli <https://github.com/cli/cli/releases>
+I had an article before on [using GitHub CLI and its commands](https://dev.to/chrisachinga/using-github-s-cli-on-ubuntu-commands-3a89), so this is kind of like an update because the cli is up on version 1.x.x right now, better to stay on the know/updated. To get the latest releases of the cli <https://github.com/cli/cli/releases>
 
 ![terminal showing gh version](../assets/ghcli-version.png "terminal showing gh  versioncli")
 
