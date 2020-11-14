@@ -24,7 +24,8 @@ First, you initialize git in your project folder, simply by:
 ```shell
 git init
 ```
-![gh](../static-files/gh-repo-create.png)
+
+![gh](../assets/ghrepoweb.png "gh repo web manual")
 
 After that, you can now start the process, open the folder on your terminal or cmd, and type in the command:
 
@@ -77,4 +78,4 @@ gh repo clone {github username}/{repository}
 
 GitHub CLI is a very useful tool that saves time and gets your work done just straight from the terminal/cmd
 
-To learn more on `gh repo clone` command, and all available commands visit the manual page [https://cli.github.com/manual](https://cli.github.com/manual)
+To learn more on `gh repo clone` command, and all available commands visit the manual page <https://cli.github.com/manual>
