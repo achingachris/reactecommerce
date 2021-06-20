@@ -1,10 +1,12 @@
+import Link from 'next/link'
+
 const Navbar = () => {
   return (
     <nav className='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
       <div className='container'>
-        <a className='navbar-brand' href='#'>
-          Ecom
-        </a>
+        <Link href='/'>
+          <a className='navbar-brand'>Ecom</a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -18,12 +20,6 @@ const Navbar = () => {
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-            <li className='nav-item'>
-              <a className='nav-link active' aria-current='page' href='#'>
-                Home
-              </a>
-            </li>
-
             <li className='nav-item dropdown'>
               <a
                 className='nav-link dropdown-toggle'
@@ -37,34 +33,30 @@ const Navbar = () => {
               </a>
               <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                 <li>
-                  <a className='dropdown-item' href='#'>
-                    Shops
-                  </a>
+                  <Link href='/products'>
+                    <a className='dropdown-item' href='#'>
+                      Products
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className='dropdown-item' href='#'>
-                    Products
-                  </a>
+                  <Link href='/services'>
+                    <a className='dropdown-item' href='#'>
+                      Services
+                    </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className='dropdown-divider' />
                 </li>
                 <li>
-                  <a className='dropdown-item' href='#'>
-                    Services
-                  </a>
+                  <Link href='/shops'>
+                    <a className='dropdown-item' href='#'>
+                      Shops
+                    </a>
+                  </Link>
                 </li>
               </ul>
-            </li>
-            <li className='nav-item'>
-              <a
-                className='nav-link disabled'
-                href='#'
-                tabindex='-1'
-                aria-disabled='true'
-              >
-                Disabled
-              </a>
             </li>
           </ul>
           <form className='d-flex'>
