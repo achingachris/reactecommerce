@@ -1,12 +1,15 @@
+import Image from 'next/image'
+
 const ServiceItem = ({ name, description }) => {
   return (
     <div className='row mt-4 mb-3'>
       <div className='col-md-7'>
         <a href='#'>
-          <img
+          <Image
             className='img-fluid rounded mb-3 mb-md-0'
-            src='http://placehold.it/700x300'
-            alt=''
+            src='/cd2c.png'
+            layout="fill"
+            alt='image not found'
           />
         </a>
       </div>
