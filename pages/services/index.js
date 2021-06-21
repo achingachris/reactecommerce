@@ -1,7 +1,7 @@
 import Layout from '../../layout/Layout'
-import Card from '../../components/Card'
+import ServiceItem from '../../components/ServiceItem'
 
-export default function Home() {
+export default function Home({ services }) {
   return (
     <Layout>
       {/* <!-- Header--> */}
@@ -17,24 +17,32 @@ export default function Home() {
       <section className='py-5'>
         <h2 className='text-center'>Products</h2>
         <div className='container px-4 px-lg-5 mt-5'>
-          <div className='row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+          <div className='justify-content-center'>
+            {services.map((service) => (
+              <ServiceItem
+                key={service.id}
+                name={service.name}
+                description={service.description}
+              />
+            ))}
           </div>
         </div>
         <div className='text-center align-items-center'>
-          <button className='btn btn-outline-primary '>
-            Next Page
-          </button>
+          <button className='btn btn-outline-primary '>Next Page</button>
         </div>
       </section>
     </Layout>
   )
+}
+
+export async function getStaticProps(context) {
+  // get latest services
+  const data = await fetch('https://ecom-cms-strapi.herokuapp.com/services')
+  const services = await data.json()
+
+  return {
+    props: {
+      services,
+    },
+  }
 }

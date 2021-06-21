@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '../layout/Layout'
 import Card from '../components/Card'
+import ServiceItem from '../components/ServiceItem'
 
-export default function Home() {
+export default function Home({ products, services }) {
   return (
     <Layout>
       {/* <!-- Header--> */}
@@ -51,15 +52,14 @@ export default function Home() {
         <h2 className='text-center'>Products</h2>
         <div className='container px-4 px-lg-5 mt-5'>
           <div className='row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {products.map((product) => (
+              <Card
+                key={product.id}
+                name={product.name}
+                image={product.cover_image.formats.medium.url}
+                price={product.price}
+              />
+            ))}
           </div>
         </div>
         <div className='text-center align-items-center'>
@@ -74,28 +74,37 @@ export default function Home() {
       <section className='py-5'>
         <h2 className='text-center'>Services</h2>
         <div className='container px-4 px-lg-5 mt-5'>
-          <div className='row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+          <div className='justify-content-center'>
+            {services.map((service) => (
+              <ServiceItem key={service.id} name={service.name} description={service.description}  />
+            ))}
           </div>
         </div>
         <div className='text-center align-items-center'>
           <Link href='/services'>
-
-          <button className='btn btn-outline-primary '>
-            View All Services
-          </button>
+            <button className='btn btn-outline-primary mt-5'>
+              View All Services
+            </button>
           </Link>
         </div>
       </section>
     </Layout>
   )
+}
+
+export async function getStaticProps(context) {
+  // get latest products
+  const res = await fetch('https://ecom-cms-strapi.herokuapp.com/products')
+  const products = await res.json()
+
+  // get latest services
+  const data = await fetch('https://ecom-cms-strapi.herokuapp.com/services')
+  const services = await data.json()
+
+  return {
+    props: {
+      products,
+      services,
+    },
+  }
 }
