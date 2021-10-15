@@ -1,10 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const Meta = ({ title, description, keywords }) => {
+const Meta = ({ title, description, keywords, pageName }) => {
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{title} | {pageName}</title>
       <meta name='description' content={description} />
       <meta name='keyword' content={keywords} />
     </Helmet>
@@ -12,8 +12,9 @@ const Meta = ({ title, description, keywords }) => {
 }
 
 Meta.defaultProps = {
-  title: 'Welcome To ProShop',
-  description: 'We sell the best products for cheap',
+  title: 'The Shop',
+  pageName: 'All Products',
+  description: 'Get The Real Deal',
   keywords: 'electronics, buy electronics, cheap electroincs',
 }
 
