@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const HomeHero = () => {
-  const dispatch = useDispatch()
+  //   const dispatch = useDispatch()
 
   const userLogin = useSelector((state) => state.userLogin)
   const { userInfo } = userLogin
@@ -19,7 +19,7 @@ const HomeHero = () => {
         {/* card with forms and stuffs */}
         {userInfo ? (
           <div className='col-md-10 mx-auto col-lg-5'>
-            <div className='card'>
+            <div className='card border rounded-3 bg-light'>
               <div className='card-body'>
                 <h5 className='card-title'>Card title</h5>
                 <h6 className='card-subtitle mb-2 text-muted'>Card subtitle</h6>

@@ -1,12 +1,4 @@
-import {
-  Row,
-  Col,
-  Form,
-  FormControl,
-  Container,
-  Button,
-  InputGroup,
-} from 'react-bootstrap'
+import { Form, FormControl, Container, Button } from 'react-bootstrap'
 import React, { useState } from 'react'
 
 const SearchBar = ({ history }) => {
