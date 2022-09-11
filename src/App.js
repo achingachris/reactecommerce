@@ -19,6 +19,7 @@ import UserEditScreen from './pages/UserEditScreen'
 import ProductListScreen from './pages/ProductListScreen'
 import ProductEditScreen from './pages/ProductEditScreen'
 import OrderListScreen from './pages/OrderListScreen'
+import ImageUploadTestScreen from './pages/ImageUploadTestScreen'
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='/cart/:id?' component={CartScreen} />
           <Route path='/admin/userlist' component={UserListScreen} />
           <Route path='/admin/user/:id/edit' component={UserEditScreen} />
+          <Route path='/test-image-upload' component={ImageUploadTestScreen} />
           <Route
             path='/admin/productlist'
             component={ProductListScreen}

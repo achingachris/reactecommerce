@@ -1,1 +1,2 @@
-# The Shop Client
+# Ecommerce - ReactJS
+
